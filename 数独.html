@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数独</title>
+    <style>
+        /*清除浮动*/
+        *{
+            margin:0;
+            padding:0;
+        }
+        .clr{*zoom: 1;}
+        .clr:after{clear: both; display: table; content: "";}
+        .shudu{
+            width: 300px;
+            margin: 100px auto;
+            box-sizing: border-box;
+        }
+        .shudu > ul {
+            float: left;
+        }
+        ul, li {
+            list-style: none;
+        }
+        ul{
+            border: 2px solid #000;
+            width: 96px;
+        }
+        li {
+            float: left;
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="shudu clr" contenteditable="true">
+    <ul class="clr">
+        <li class="red">1</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">5</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">9</li>
+    </ul>
+    <ul class="clr">
+        <li  class="red">9</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">4</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">6</li>
+    </ul>
+    <ul class="clr">
+        <li  class="red">4</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">8</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">3</li>
+    </ul>
+    <ul class="clr">
+        <li  class="red">9</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">8</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">5</li>
+    </ul>
+    <ul class="clr">
+        <li  class="red">3</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">5</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">7</li>
+    </ul>
+    <ul class="clr">
+        <li  class="red">5</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">4</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">8</li>
+    </ul>
+    <ul class="clr">
+        <li  class="red">6</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">1</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">8</li>
+    </ul>
+    <ul class="clr">
+        <li  class="red">8</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">3</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">5</li>
+    </ul>
+    <ul class="clr">
+        <li  class="red">7</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">6</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li  class="red">2</li>
+    </ul>
+</div>
+
+</body>
+</html>

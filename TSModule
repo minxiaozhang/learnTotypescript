@@ -1,0 +1,39 @@
+/*interface StringValidator {
+    isAccept(s:string):boolean;
+}
+var lettersRrgexp=/^[A-Za-z]+$/;
+var numberRrgexp=/^[0-9]+$/;
+
+class letterOnluValidator implements StringValidator{
+    isAccept(s: string): boolean {
+        return lettersRrgexp.test(s);
+    }
+
+}
+class ZipOnluValidator implements StringValidator{
+    isAccept(s: string): boolean {
+        return s.length===5&&numberRrgexp.test(s);
+    }
+
+}*/
+
+module Validation{
+    export  interface StringValidator {
+        isAcceptable(s:string):boolean;
+    }
+    var lettersRrgexp=/^[A-Za-z]+$/;
+    var numberRrgexp=/^[0-9]+$/;
+    export class lettersOnlyValidator implements StringValidator{
+        isAcceptable(s: string): boolean {
+            return lettersRrgexp.test(s);
+        }
+    }
+    class ZipOnluValidator implements StringValidator {
+
+        isAcceptable(s: string): boolean {
+            return s.length === 5 && numberRrgexp.test(s);
+        }
+
+    }
+
+    }
